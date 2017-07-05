@@ -9,7 +9,13 @@ In order to run this app:
 Then run the app as follows:
 
 ```
-$ TOKEN=api-token PLAYER=client-identifier-to-control node index.js
+$ TOKEN=api-token PLAYER=client-identifier-to-control OPTION=[option] node index.js
 ```
+
+Where option is one of:
+`play`
+`pause`
+`next`
+`back`
 
 Finally, add the webhook to https://app.plex.tv/web/app#!/account/webhooks (it'll be http://localhost:10000).
