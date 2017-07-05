@@ -19,3 +19,4 @@ Where option is one of:
 `back`
 
 Finally, add the webhook to https://app.plex.tv/web/app#!/account/webhooks (it'll be http://localhost:10000).
+(webhooks are currently broken as the program terminates after running the script)
