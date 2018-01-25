@@ -43,22 +43,22 @@ var options =
 switch(process.env.OPTION)
 {
 	case 'play':
-		console.log('Media key: play');
+		console.log('Music unpaused');
 	  options.url = 'https://plex.tv/player/playback/play';
 	  request(options);
 		break;
 	case 'pause':
-		console.log('Media key: pause');
+		console.log('Music paused');
 		options.url = 'https://plex.tv/player/playback/pause';
 		request(options);
 		break;
 	case 'next':
-		console.log('Media key: next');
+		console.log('Skipped to next track');
 		options.url = 'https://plex.tv/player/playback/skipNext';
 		request(options);
 		break;
 	case 'back':
-		console.log('Media key: back');
+		console.log('Skipped to previous track');
 		options.url = 'https://plex.tv/player/playback/skipPrevious';
 		request(options);
 		break
